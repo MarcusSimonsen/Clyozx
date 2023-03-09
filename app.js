@@ -7,10 +7,18 @@ const port = 5000
 app.use(express.static('public'))
 app.use('/css', express.static(__dirname + 'public/css'))
 
+app.use(expressLayouts)
+app.set('layout', './layouts/full-width.ejs')
 app.set('view engine', 'ejs')
 
 app.get('', (req, res) => {
-    res.render('index')
+    res.render('index', { title: "Clyozx" })
+})
+app.get('/projects', (req, res) => {
+    res.render('projects', { title: "Projects" })
+})
+app.get('/about', (req, res) => {
+    res.render('about', { title: "About" })
 })
 
 app.listen(port, () => console.info(`App listening on port ${port}`))
