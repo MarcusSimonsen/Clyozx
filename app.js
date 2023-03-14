@@ -20,5 +20,9 @@ app.get('/projects', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', { title: "About" })
 })
+// Projects
+app.get('/sort_visualizer', (req, res) => {
+    res.render('sort_visualizer', { title: "Sort Vizualizer"})
+})
 
 app.listen(port, () => console.info(`App listening on port ${port}`))
