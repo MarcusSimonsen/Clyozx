@@ -39,6 +39,12 @@ a.nav-btn:hover {
     background-color: #301F34;
 }
 
+.canvas {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
 .logo {
     color: #6F4125;
     font-size: 4vw;
