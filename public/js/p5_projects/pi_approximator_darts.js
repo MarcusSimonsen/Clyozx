@@ -3,7 +3,7 @@ let pointsInside = 0;
 let piDiv;
 
 function setup() {
-    var canvas = createCanvas(500, 500);
+    const canvas = createCanvas(500, 500);
     canvas.parent('p5_canvas');
 
     piDiv = select('#pi_div');
