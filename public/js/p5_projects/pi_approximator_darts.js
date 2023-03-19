@@ -13,6 +13,8 @@ function setup() {
     strokeWeight(2);
     fill(0);
     ellipse(width/2, height/2, width);
+
+    //saveGif("pi_approximator_darts.gif", 10);
 }
 
 function draw() {
