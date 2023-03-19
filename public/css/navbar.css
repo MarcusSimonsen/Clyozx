@@ -1,6 +1,5 @@
 .nav-bar {
     background-color: #301F34;
-    padding: 2vh;
     display: flex;
     justify-content: center;
     place-items: center;
@@ -10,18 +9,17 @@
 }
 .nav-btn {
     background-color: #372338;
-
+    
     padding-left: 2vh;
     padding-right: 2vh;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     
     border-color: black;
     border-width: 0.2vh;
     border-style: solid;
-    border-radius: 2vh;
+    
+    text-decoration: none;
 }
 a.nav-btn:hover {
     background-color: #301F34;
