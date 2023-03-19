@@ -22,11 +22,14 @@ app.get('/projects', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', { title: "About" })
 })
-app.get('/sort_visualizer', (req, res) => {
+app.get('/sort-visualizer', (req, res) => {
     res.render('sort_visualizer', { title: "Sort Vizualizer"})
 })
 app.get('/pi-approximator-darts', (req, res) => {
     res.render('pi_approximator_darts', { title: 'Pi approximator using darts' })
+})
+app.get('/marching-squares', (req, res) => {
+    res.render('marching_squares', { title: 'Marching Squares' })
 })
 
 app.listen(port, () => console.info(`App listening on port ${port}`))
