@@ -142,15 +142,12 @@ class MarchingSquares {
         let x = i * this.res;
         let y = j * this.res;
 
-        console.log(this.grid[i][j], this.grid[i+1][j], this._weightedMid(this.grid[i][j], this.grid[i+1][j]));
         let a = createVector(x + this.res * this._weightedMid(this.grid[i][j], this.grid[i+1][j]), y);
         let b = createVector(x + this.res, y + this.res * this._weightedMid(this.grid[i+1][j], this.grid[i+1][j+1]));
         let c = createVector(x + this.res * this._weightedMid(this.grid[i][j+1], this.grid[i+1][j+1]), y + this.res);
         let d = createVector(x, y + this.res * this._weightedMid(this.grid[i][j], this.grid[i][j+1]));
     
         let state = this._getState(this._getHard(i, j), this._getHard(i+1, j), this._getHard(i+1, j+1), this._getHard(i, j+1));
-
-        console.log(this.grid[i][j], this.grid[i+1][j], this._weightedMid(this.grid[i][j], this.grid[i+1][j]));
 
         switch (state) {
             case 0:
